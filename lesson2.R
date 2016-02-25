@@ -1,0 +1,15 @@
+dna=rep(c("A","T","G","C"),c(12,8,11,9))
+fdna=factor(dna)
+summary(1:10)[2]
+summary(dna)
+summary(fdna)[c("A","T")]
+ratio=summary(fdna)/length(dna)*100
+ratio
+seq(2,10,.2)
+sample(dna,size=8,replace=FALSE)
+sample(dna,size=88,replace=FALSE)
+sample(dna,size=88,replace=TRUE)
+dna2=sample(dna,size=10000,replace=T)
+ratio=summary(factor(dna2))/length(dna2)
+ratio2=summary(factor(dna))/length(dna)
+ratio/ratio2
